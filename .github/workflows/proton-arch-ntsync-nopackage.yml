@@ -17,7 +17,7 @@ jobs:
       - name: Install System Dependencies
         run: |
           echo -e "[multilib]\nInclude = /etc/pacman.d/mirrorlist" >> /etc/pacman.conf
-          pacman -Syu --noconfirm base-devel sudo wine ccache lib32-jack2 nice git vulkan-headers 
+          pacman -Syu --noconfirm base-devel sudo wine ccache lib32-jack2 libnice git vulkan-headers 
 
       - name: Create User
         run: |
